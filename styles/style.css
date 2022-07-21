@@ -1,0 +1,175 @@
+/* 
+    - CSS criado com display block por padrão, contendo elementos em flex e atributos com suas
+    respectivas propriedades.
+    - Layout responsivo.
+    - Padrões de identação revisados.
+    - Por padrão, o layout usa a propriedade padding com valor 2rem para left/right, com 
+    o objetivo de criar uma melhor identidade e coesão nas laterais.
+*/
+
+
+/* Fonte Open Sans com três variações importadas do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+/* Elementos globais que alteram as propriedades da página toda */
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 50px;
+}
+p {
+    font-size: 16px;
+}
+
+/* Elementos específicos da página */
+
+    /* 
+        Elemento header contém:
+        - Display flex para alinhamento do menu principal;
+        - Atributos (ID) #headertitle, #headerlinks, para separação dos elementos do menu;
+        - Atributos (Class) .logo, .title, .links, para separação e personalização dos itens.
+    */
+
+    header {
+            background-color: #5271FF;
+            padding: 2rem;
+            display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+    }
+        #headertitle {
+            text-decoration: none;
+            display: flex;
+                align-items: center;
+
+        }
+            .logo {
+                width: 22px;
+                height: 22px;
+            }
+            .title {
+                margin-left: 5px;
+                color: white;
+                font-size: 2;
+            }
+
+        #headerlinks {
+            text-align: right;
+            text-decoration: none;
+            display: flex;
+        }    
+            .links {
+                margin-left: 1rem;
+                color: white;
+                text-decoration: none;
+            }
+
+     /*
+            Elemento main contém:
+            - Atributo (ID) #introduction contém propriedade display com valor flex para separação
+            dos elementos (div) classificados .intro_image e .intro_description para formatação
+            do layout de apresentação da página.
+
+            - Atributo (ID) #access contém propriedade display com valor flex para separação dos
+            elementos (div) classificados .access_description e .access_clients, cuja função
+            é descrever e apontar para o diretório dos respectivos clientes.
+
+            - Atributo (ID) #about contém propriedade display com valor flex para separação dos
+            elementos (div) class .about_image cuja função é formatar uma ilustração .png e
+            o .about_description que tem como finalidade informar mais sobre a respectiva
+            página. 
+                *Usada a propriedade flex-flow com valores row wrap-reverse para
+            melhor formatação em dispositivos móveis.
+
+      */       
+
+    main {
+        background-color: white;
+    }
+        #introduction {
+            background-color: #F5F5F5;
+            padding: 8rem 2rem;
+            display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+        }
+            .intro_image {
+                width: 320px;
+                height: 200px;
+            }
+            .intro_description {
+                margin: 25px;
+                text-align: center;
+            }
+        
+        #access {
+            background-color: #EBEBEB;
+            padding: 1rem 2rem;
+            border-top: solid;
+            border-bottom: solid;
+            border-width: 1px;
+            display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            
+        }
+            .access_description {
+                text-align: center;
+                font-size: 1.5rem;
+                width: 400px;
+                margin: 5px;
+                padding: 1rem;
+            }
+            .access_clients {
+                color: #333333;
+                text-align: center;
+                text-decoration: none;
+                width: 400px;
+                margin: 5px;
+                padding: 1rem;
+                border-style: solid;
+                    border-color: #333333;
+                    border-radius: 1rem;
+                    border-width: 1px;
+            }
+        
+        #about {
+            background-color: #E0E0E0;
+            padding: 8rem 2rem;
+            display: flex;
+                flex-flow: row wrap-reverse;
+                justify-content: center;
+                align-items: center;
+        }
+            .about_description {
+                margin: 25px;
+                text-align: center;
+            }
+            .about_image {
+                width: 320px;
+                height: 200px;
+            }
+    
+    /*
+            Elemento footer contém uma propriedade display com valor flex para organização do rodapé.
+    */        
+
+    footer {
+        background-color: #333333;
+        color: white;
+        font-size: 0.7rem;
+        padding: 1rem 2rem;
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }

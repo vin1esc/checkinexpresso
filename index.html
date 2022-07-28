@@ -1,26 +1,4 @@
 <!DOCTYPE html>
-
-<!--
-    Página em html criada para representar o domínio checkinexpresso.com.br e com fins
-    de estudo da linguagem de estruturação HTML, e de estilização CSS.
--->
-
-<!--
-    Head contém:
-        - Elemento <html> com atributo <lang> e valores "pt-br" cujo objetivo é apontar ao
-        navegador qual a lingua padrão da página.
-        - Elemento <meta> com atributo <charset> e valor "UTF-8" que define a leitura
-        de caracteres universais no site.
-        - Elemento <meta> com atributos <http-equiv; content>: ?
-        - Elemento <meta> com atributos <name; content> e seus respectivos valores
-        com objetivo de tornar a visualização possível na maioria dos dispositivos.
-        - Elemento <link> com atributos <rel; href; type> e seus valores para
-        definir um favicon (valor: shortcut icon) ao navegador.
-        - Elemento <link> com atributos <rel; href> para definir o diretório
-        e criar um link com o arquivo de estilos CSS.
-        - Elemento <title> com seu valor para definir um título ao navegador.       
--->
-
 <html lang="pt-br">
 
 <head>
@@ -32,80 +10,107 @@
     <title>Check-in Expresso</title>
 </head>
 
-<!--
-    Body contém:
-    - Elemento <header> com objetivo de ser o "pai" para os elementos que criam o menu do site.
-        - Elementos <a; div> que abrigam a imagem, descrição e links do menu.
-        - Estilização CSS com propriedade display e valor flex (consultar CSS).
-
-    - Elemento <main> que abriga as demais divs, com o objetivo de ser o conteúdo da página.
-        - Atributos (IDs) definidos para estilização CSS e apontamento dos links,
-        através dos fragmentos (#access; #about).
-    
-    - Elemento <footer> que abriga as informações de minha autoria e link para o
-    meu GitHub.
--->
-
 <body>
     <header>
-        <a href="" id="headertitle">
-            <img src="images/ceo.svg" class="logo">
-            <strong class="title">
-                Check-in Expresso
-            </strong>
-        </a>
-        <div id="headerlinks">
-            <a href="#access" class="links">Acesso</a>
-            <a href="mailto:contato@checkinexpresso.com.br" class="links">Contato</a>
-            <a href="#about" class="links">Sobre</a>
-        </div>
+        <section id="headertitle">
+                <img src="images/ceo.svg" alt="" title="logo" class="headerlogo">
+            <div>
+                <p class="headerdescription">Check-in Expresso</p>
+            </div>
+        </section>
+
+        <section id="headermenu">
+            <nav class="headerlinks">
+                <a href="#maincontent" class="links">Acesso</a>
+                <a href="mailto:contato@checkinexpresso.com.br" class="links">Contato</a>
+                <a href="#about" class="links">Sobre</a>
+            </nav>
+            <nav class="headericons">
+                <img src="images/access.svg" title="access" class="icons">
+                <img src="images/contact.svg" title="talkwithus" class="icons">
+                <img src="images/about.svg" title="about" class="icons">
+            </nav>
+        </section>
     </header>
 
     <main>
-        <div id="introduction">
-            <img class="intro_image"src="images/clouds.png" alt="">
-            <div class="intro_description">
-                <h1>Check-in Expresso</h1> 
-                <h3>Diga adeus aos formulários manuscritos, espera e filas na recepção.</h3>
+        <section id="maincontent">
+            <div class="main">
+                <div class="maintitle">
+                    Check-in Expresso
+                </div>
+                <div class="maindescription">
+                    Diga adeus aos formulários manuscritos, espera e filas na recepção
+                </div>
             </div>
-        </div>
+    
+            <div id="mainlinks">
+                <div class="mainlinkstitle">
+                    Acesse o Seu
+                </div>
+                <div class="mainlinksdescription">
+                    Selecione o hotel que deseja acessar
+                </div>
+                <a href="https://www.checkinexpresso.com.br/montereal" class="mainlinksbutton">
+                     <p class="mlbtitle">Monte Real</p>
+                     <p class="mlbdescription">Resort em Águas de Lindóia</p>
+                </a>
+                <a href="https://www.checkinexpresso.com.br/valedosol" class="mainlinksbutton">
+                    <p class="mlbtitle">Vale do Sol</p>
+                    <p class="mlbdescription">Hotel Fazenda em Serra Negra</p>
+                </a>
+                </div>
+            </div>
+        </section>
         
-        <div id="access">
-            <div class="access_description">
-                <h3>Acesse o seu</h3>
-                <p>
-                    Selecione o hotel que deseja acessar:
-                </p>
+        <section id="about">
+            <div class="aboutbox">
+                <div class="boxtitle">
+                    Conheça
+                </div>
+                <div class="boxdescription">
+                    O Check-in Expresso surgiu em 2020 com o advento da pandemia, quando se tornou necessário
+                    seguir diversas medidas sanitárias para garantir a saúde e o bem estar dos hóspedes, com
+                    a findalidade de evitar aglomerações, filas na recepção dos hotés e tornar o 
+                    processo de check-in instantâneo. 
+                </div>
             </div>
-            <a href="https://www.checkinexpresso.com.br/montereal" target="_blank" class="access_clients">
-                <h3>Hotel Monte Real</h3>
-                <p>Resort em Águas de Lindóia</p>
-            </a>
-            <a href="https://www.checkinexpresso.com.br/valedosol" target="_blank" class="access_clients">
-                <h3>Hotel Vale do Sol</h3>
-                <p>Hotel Fazenda em Serra Negra</p>
-            </a>
-        </div>
 
-        <div id="about">
-            <div class="about_description">
-                <h2>Sobre Nós</h2> 
-                <p>
-                    Automatize seu processo de check-in através do nosso facilitador
-                    para preencher o formulário nacional do registro de hóspedes.
-                </p>
+            <div class="aboutbox">
+                <div class="boxtitle">
+                    Missão
+                </div>
+                <div class="boxdescription">
+                    Seguindo todas as regras da LGPD, nossa missão é tornar sua vida mais ágil e prática, 
+                    através da automação no preenchimento do formulário nacional de registro 
+                    de hóspedes (FNRH). Desta forma, você não precisará a ficha de forma 
+                    manuscrita, nem se aborrecer com filas na recepção dos hotéis. 
+                </div>
             </div>
-            <img class="about_image"src="images/cloudstwo.png" alt="">
-        </div>
+
+            <div class="aboutbox">
+                <div class="boxtitle">
+                    Sobre Nós
+                </div>
+                <div class="boxdescription">
+                    Trabalhamos com muita dedicação para garantir que a sua experiência como hóspede seja a melhor
+                    possível, nos importamos com a forma como seus dados são usados e garantimos que eles apenas
+                    sejam pelo hotel de sua escolha.
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div>
+        <section id="footertext">
             Check-in Expresso
-        </div>
-        <address>
-            <a href="https://github.com/viniciusescandon" class="links">VE</a> | 2022
-        </address>
+        </section>
+
+        <section id="footerlinks">
+            <address>
+                <a href="https://www.github.com/viniciusescandon" class="flinks" target="_blank">VE | 2022</a>
+            </address>
+        </section>
     </footer>
 </body>
 

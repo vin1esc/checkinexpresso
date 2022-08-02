@@ -1,0 +1,97 @@
+ /* Elementos com telas < 1000px */
+ @media screen and (max-width: 1000px) {
+    header {
+        padding: 1rem;
+    }
+        #headermenu {
+            background-color: none;
+            width: auto;
+        }
+            .headerlinks {
+                display: none;
+            }
+            .headericons {
+                display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+            }
+            .linkicons {
+                margin: 0 0 0 25px;
+                padding: 0;
+                align-items: center;
+                text-decoration: none;
+                width: 22px;
+                height: 22px;
+
+            }
+            .icons {
+                width: 22px;
+                height: 22px;
+                color: #FFFFFF;
+                margin: 0;
+                padding: 0;
+             }
+        
+
+    main {
+        background-color: none;    
+    }         
+        #maincontent {
+            background-position: 40% 75%;
+            padding: 1rem 1rem;
+            display: block;
+            border-radius: 0 0 1rem 1rem;
+        }
+            .main {
+                margin: 0 0 10px 0;
+                padding: 6rem 1rem;
+            }
+            .maintitle {
+                text-align: center;
+                font-size: 60px;
+                line-height: 1;
+            }
+            .maindescription {
+                margin-top: 20px;
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+        #mainlinks {
+            background-color: none;
+            margin: 0;
+
+        }
+            .mainlinksdescription {
+                font-size: 16px;
+            }
+            .mainlinksbutton {
+                background-color: none;
+            }
+                .mlbtitle {
+                    background-color: none;
+                }
+                .mlbdescription {
+                    font-size: 18px;
+                    margin: 0 5px;
+                }
+        
+        #about {
+            display: block;
+            margin: 1rem 0 0 0;
+        }
+            .aboutbox {
+                margin: 0 1rem 1rem 1rem;
+            }
+            .boxtitle {
+                text-align: center;
+            }
+            .boxdescription {
+                text-align: center;
+            }
+
+    footer {
+        padding: 1rem 1rem;
+    }
+    }

@@ -39,10 +39,14 @@ body {
             .headerbutton {
                 display: none;
             }
+            .headerlinks {
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+            }
             .links {
                 color: #FFFFFF;
                 text-decoration: none;
-                margin-left: 1rem;
             }
                 .links:hover {
                     font-weight: bold;
@@ -57,29 +61,36 @@ body {
         background-color: none;
     }        
         #maincontent {
-            background-color: none;
+            background-image: url(../images/bg.jpg);
+                background-repeat: no-repeat;
+                background-position: left;
+                background-size: cover;
             padding: 8rem 2rem;
             display: flex;
-                justify-content: center;
+                justify-content: space-between;
+                align-items: center;
         }
             .main {
                 background-color: none;
-                margin-right: 30px;
-                padding: 4.5rem 5px;
+                margin: 0 1rem 0 1rem;
             }
-            .maintitle {
-                font-weight: 500;
-                font-size: 60px;
-            }
-            .maindescription {
-                margin-top: 2px;
-                font-weight: 300;
-                font-size: 25px;
-            }
+                .maintitle {
+                    font-weight: 500;
+                    font-size: 60px;
+                    color: #FFFFFF;
+                    
+                }
+                .maindescription {
+                    margin-top: 2px;
+                    font-weight: 300;
+                    font-size: 25px;
+                    color: #FFFFFF;
+                }
 
         #mainlinks {
             background-color: #5271FF;
             padding: 1rem;
+            margin: 0 1rem 0 1rem;
             border-radius: 1rem;
         }
             .mainlinkstitle {
@@ -97,7 +108,7 @@ body {
                 margin-bottom: 20px;
             }
             .mainlinksbutton {
-                color: #FFFFFF;
+                background-color: #5271FF;
                 text-decoration: none;
                 display: block;
                 text-align: center;
@@ -106,16 +117,19 @@ body {
                 border: solid;
                     border-radius: 1rem;
                     border-width: 1px;
+                    border-color: #FFFFFF;
             }
                     .mainlinksbutton:hover {
-                        color: #333333;
+                        color: #FFFFFF;
                         transition-duration: 0.3s;
                     }
                 .mlbtitle {
+                    color: #FFFFFF;
                     font-weight: 500;
                     font-size: 25px;
                 }
                 .mlbdescription {
+                    color: #FFFFFF;
                     font-weight: 300;
                     font-size: 22px;
                     margin: 0 20px;
@@ -125,13 +139,14 @@ body {
             margin: 2rem 2rem;
             display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: stretch;
+                gap: 1rem;
         }
             .aboutbox {
                 background-color: #F5F5F5;
                 padding: 1rem;
-                margin: 1rem 1rem;
                 border-radius: 5px;
+                flex: 1;
             }
             .boxtitle {
                 font-weight: bold;
@@ -140,6 +155,7 @@ body {
             }
             .boxdescription {
                 text-align: justify;
+                font-size: larger;
             }
 
     footer {
@@ -166,83 +182,3 @@ body {
                     transition-duration: 0.3s;
                 }
                 
-            
-    /* Elementos com telas < 900px */
-    @media screen and (max-width: 900px) {
-    header {
-        padding: 1rem;
-    }
-        #headermenu {
-            background-color: none;
-        }
-            .headerlinks {
-                display: none;
-            }
-            .headericons {
-                display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-            }
-             .icons {
-                width: 22px;
-                height: 22px;
-                color: #FFFFFF;
-                margin-left: 30px;
-             }
-        
-
-    main {
-        background-color: none;    
-    }         
-        #maincontent {
-            padding: 0 1rem;
-            display: block;
-        }
-            .main {
-                margin: 0 0 10px 0;
-                padding: 6rem 1rem;
-            }
-            .maintitle {
-                text-align: center;
-                font-size: 60px;
-                line-height: 1;
-            }
-            .maindescription {
-                margin-top: 20px;
-                text-align: center;
-                font-size: 20px;
-            }
-
-        #mainlinks {
-            background-color: none;
-
-        }
-            .mainlinksdescription {
-                font-size: 16px;
-            }
-            .mainlinksbutton {
-                background-color: none;
-            }
-                .mlbtitle {
-                    background-color: none;
-                }
-                .mlbdescription {
-                    font-size: 18px;
-                    margin: 0 5px;
-                }
-        
-        #about {
-            display: block;
-            margin: 2rem 0;
-        }
-            .boxtitle {
-                text-align: center;
-            }
-            .boxdescription {
-                text-align: center;
-            }
-
-    footer {
-        padding: 1rem 1rem;
-    }
-    }

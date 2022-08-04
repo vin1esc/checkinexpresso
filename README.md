@@ -24,3 +24,8 @@ O site está sendo criado pela minha pessoa, com fins de estudo. Neste ambiente,
 - Remoções: ilustrações do conteúdo principal (clouds) e da section "Sobre" (cloudstwo).
 
 > Poder criar uma nova camada de estilização para telas menores que 900px levou o projeto a outro nível. Agora posso estabelecer valores personalizados para cada elemento, e ter layouts separados para cada tipo de device.
+
+#### Atualizações 04/08/2022
+- Refatoração da section About: remoção dos paddings manuais, em favor da propriedade *gap* que cria o espaçamento automático entre os elementos. Adição de imagens ilutrastativas em cada container.
+- Acessibilidade: adição de rótulos nos ícones do header menu.
+- Responsividade: alteração da troca de layout, de 900px para 1000px.

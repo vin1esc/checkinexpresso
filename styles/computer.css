@@ -144,18 +144,36 @@ body {
         }
             .aboutbox {
                 background-color: #F5F5F5;
-                padding: 1rem;
                 border-radius: 5px;
                 flex: 1;
             }
-            .boxtitle {
+            .boxtitle1, .boxtitle2, .boxtitle3 {
+                border-radius: 5px 5px 0 0;
+                padding: 6rem 2rem 1rem 2rem;
+                font-size: 55px;
                 font-weight: bold;
-                font-size: 20px;
-                margin: 0 0 10px 0;
+                color: #FFFFFF;
+
             }
+                .boxtitle1 {
+                    background-image: url(../images/know.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
+                .boxtitle2 {
+                    background-image: url(../images/mission.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
+                .boxtitle3 {
+                    background-image: url(../images/aboutus.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
             .boxdescription {
                 text-align: justify;
                 font-size: larger;
+                padding: 1rem 2rem;
             }
 
     footer {

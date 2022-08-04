@@ -14,15 +14,17 @@
                 display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    gap: 28px;
             }
             .linkicons {
-                margin: 0 0 0 25px;
+                margin: 0 0 0 0;
                 padding: 0;
                 align-items: center;
                 text-decoration: none;
                 width: 22px;
-                height: 22px;
-
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
             }
             .icons {
                 width: 22px;
@@ -30,6 +32,11 @@
                 color: #FFFFFF;
                 margin: 0;
                 padding: 0;
+             }
+             .iconsdescription {
+                color: #FFFFFF;
+                font-weight: bold;
+                font-size: 9px;
              }
         
 
@@ -84,11 +91,14 @@
             .aboutbox {
                 margin: 0 1rem 1rem 1rem;
             }
-            .boxtitle {
-                text-align: center;
+            .boxtitle1, .boxtitle2, .boxtitle3 {
+                text-align: left;
+                padding: 6rem 1rem 0.5rem 1rem;
+                font-size: 45px;
             }
             .boxdescription {
-                text-align: center;
+                text-align: justify;
+                padding: 1rem 1rem;
             }
 
     footer {
